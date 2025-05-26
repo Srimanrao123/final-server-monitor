@@ -10,7 +10,7 @@ const SeverityDonutChart = () => {
 
     useEffect(() => {
             async function fetchCpu() {
-                const res = await fetch("http://127.0.0.1:8000/server/1")
+                const res = await fetch("https://sriman.pythonanywhere.com/server/1")
                 const data = await res.json()
                 setlow(parseInt(data["low"]))
                 setmedium(parseInt(data["medium"]))
